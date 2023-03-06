@@ -1,7 +1,9 @@
+import Router from './Router';
+
 function App() {
   return (
     <div className="App">
-     React-Redux Group Project
+     <Router />
     </div>
   );
 }
