@@ -17,7 +17,7 @@ function Rocket({ flickrImages, name, description }) {
 }
 
 Rocket.propTypes = {
-  flickrImages: PropTypes.arrayOf(Array).isRequired,
+  flickrImages: PropTypes.instanceOf(Array).isRequired,
   name: PropTypes.string.isRequired,
   description: PropTypes.string.isRequired,
 };
