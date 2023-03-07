@@ -18,7 +18,17 @@ const rocketsSlice = createSlice({
   },
   extraReducers: (builder) => {
     builder.addCase(getRockets.fulfilled, (state, { payload }) => (
-      { ...state, rockets: payload.data }
+      {
+        ...state,
+        rockets: payload.data.map(
+          (rocket) => ({
+            id: rocket.rocket_id,
+            name: rocket.rocket_name,
+            type: rocket.rocket_type,
+            flickr_images: rocket.flickr_images,
+          }),
+        ),
+      }
     ));
   },
 });
