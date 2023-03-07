@@ -1,5 +1,6 @@
 import styles from '../styles/Navbar.module.css';
 import planet from '../assets/planet.png';
+import Route from './Route';
 
 function Navbar() {
   return (
@@ -9,11 +10,7 @@ function Navbar() {
         <span>Space Travelers&apos; Hub</span>
       </div>
       <nav className={styles.nav}>
-        <ul>
-          <li>One</li>
-          <li>Two</li>
-          <li>Three</li>
-        </ul>
+        <Route />
       </nav>
     </header>
   );
