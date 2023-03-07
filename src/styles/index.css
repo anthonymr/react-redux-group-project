@@ -19,3 +19,7 @@ a {
 a.active {
   text-decoration: underline;
 }
+
+.myProfileContainer {
+  display: flex;
+}
