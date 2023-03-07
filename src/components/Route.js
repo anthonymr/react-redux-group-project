@@ -9,6 +9,9 @@ function Route() {
       <li>
         <NavLink to="missions">Missions</NavLink>
       </li>
+      <li>
+        <NavLink to="myprofile">My profile</NavLink>
+      </li>
     </ul>
   );
 }
