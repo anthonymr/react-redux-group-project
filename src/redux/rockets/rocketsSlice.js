@@ -26,6 +26,7 @@ const rocketsSlice = createSlice({
             name: rocket.rocket_name,
             type: rocket.rocket_type,
             flickr_images: rocket.flickr_images,
+            description: rocket.description,
           }),
         ),
       }
