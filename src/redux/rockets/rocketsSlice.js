@@ -7,7 +7,18 @@ const initialState = {
 
 export const getRockets = createAsyncThunk(
   'rockets/getRockets',
-  () => axios.get('https://api.spacexdata.com/v3/rockets'),
+  async () => {
+    const response = await axios.get('https://api.spacexdata.com/v3/rockets');
+    return response.data.map(
+      (rocket) => ({
+        id: rocket.rocket_id,
+        name: rocket.rocket_name,
+        type: rocket.rocket_type,
+        flickr_images: rocket.flickr_images,
+        description: rocket.description,
+      }),
+    );
+  },
 );
 
 const rocketsSlice = createSlice({
@@ -17,20 +28,7 @@ const rocketsSlice = createSlice({
     setRockets: (state, { payload }) => ({ ...state, rockets: payload }),
   },
   extraReducers: (builder) => {
-    builder.addCase(getRockets.fulfilled, (state, { payload }) => (
-      {
-        ...state,
-        rockets: payload.data.map(
-          (rocket) => ({
-            id: rocket.rocket_id,
-            name: rocket.rocket_name,
-            type: rocket.rocket_type,
-            flickr_images: rocket.flickr_images,
-            description: rocket.description,
-          }),
-        ),
-      }
-    ));
+    builder.addCase(getRockets.fulfilled, (state, { payload }) => ({ ...state, rockets: payload }));
   },
 });
 
