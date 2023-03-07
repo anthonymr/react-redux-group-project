@@ -1,9 +1,10 @@
 import React from 'react';
+import ReservedRockets from '../components/ReservedRockets';
 
 function MyProfileRoute() {
   return (
-    <section>
-      My Profile
+    <section className="myProfileContainer">
+      <ReservedRockets />
     </section>
   );
 }
