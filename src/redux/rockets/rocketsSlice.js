@@ -17,10 +17,9 @@ const rocketsSlice = createSlice({
     setRockets: (state, { payload }) => ({ ...state, rockets: payload }),
   },
   extraReducers: (builder) => {
-    builder.addCase(getRockets.fulfilled, (state, { payload }) => {
-      console.log(payload);
-      return { ...state, rockets: payload };
-    });
+    builder.addCase(getRockets.fulfilled, (state, { payload }) => (
+      { ...state, rockets: payload.data }
+    ));
   },
 });
 
