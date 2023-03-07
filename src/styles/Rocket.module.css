@@ -35,6 +35,12 @@
   cursor: pointer;
 }
 
+.rocketContent > button.cancel {
+  background-color: white;
+  border: 1px solid gray;
+  color: gray;
+}
+
 .reservedLabel {
   background-color: rgb(44, 167, 171);
   color: white;
