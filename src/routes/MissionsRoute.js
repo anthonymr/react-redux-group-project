@@ -1,9 +1,10 @@
 import React from 'react';
+import Missions from '../components/Missions';
 
 function MissionsRoute() {
   return (
     <section>
-      Missions
+      <Missions />
     </section>
   );
 }
