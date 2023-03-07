@@ -11,3 +11,11 @@
   font-family: 'Roboto', sans-serif;
   color: var(--black);
 }
+
+a {
+  text-decoration: none;
+}
+
+a.active {
+  text-decoration: underline;
+}
