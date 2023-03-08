@@ -20,7 +20,14 @@ function Mission({
       <td>{name}</td>
       <td>{description}</td>
       <td>
-        <span>NOT A MEMBER</span>
+        {
+          !reserved
+          && <span>NOT A MEMBER</span>
+        }
+        {
+          reserved
+          && <span>Active Member</span>
+        }
       </td>
       <td>
         {
