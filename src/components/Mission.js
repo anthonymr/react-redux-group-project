@@ -1,6 +1,14 @@
 import PropTypes from 'prop-types';
+import { useDispatch } from 'react-redux';
+import { reserveMission } from '../redux/missions/missionSlice';
 
-function Mission({ name, description }) {
+function Mission({ name, description, id }) {
+  const dispatch = useDispatch();
+
+  function reserveClickHandler() {
+    dispatch(reserveMission(id));
+  }
+
   return (
     <tr className="missions-table-row">
       <td>{name}</td>
@@ -9,7 +17,7 @@ function Mission({ name, description }) {
         <span>NOT A MEMBER</span>
       </td>
       <td>
-        <button type="button">Join mission</button>
+        <button type="button" onClick={reserveClickHandler}>Join mission</button>
       </td>
     </tr>
   );
@@ -18,6 +26,7 @@ function Mission({ name, description }) {
 Mission.propTypes = {
   name: PropTypes.string.isRequired,
   description: PropTypes.string.isRequired,
+  id: PropTypes.string.isRequired,
 };
 
 export default Mission;
