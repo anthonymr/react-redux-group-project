@@ -14,7 +14,7 @@ const missionsSlice = createSlice({
   name: 'missions',
   initialState,
   reducers: {
-    setMissions: (state, { payload }) => ({ ...state, rockets: payload }),
+    setMissions: (state, { payload }) => ({ ...state, missions: payload }),
   },
   extraReducers: (builder) => {
     builder.addCase(getMissions.fulfilled, (state, { payload }) => (
