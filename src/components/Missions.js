@@ -20,6 +20,7 @@ function Missions() {
             <Mission
               name={mission.name}
               description={mission.description}
+              id={mission.id}
             />
           </tbody>
         ))}
