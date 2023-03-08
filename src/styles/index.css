@@ -20,10 +20,6 @@ a.active {
   text-decoration: underline;
 }
 
-.table-col-name {
-  width: 10%;
-}
-
-.table-col-description {
-  width: 60%;
+.myProfileContainer {
+  display: flex;
 }
