@@ -12,9 +12,11 @@ function Rockets() {
           rockets.map((rocket) => (
             <li key={rocket.id}>
               <Rocket
+                id={rocket.id}
                 flickrImages={rocket.flickr_images}
                 name={rocket.name}
                 description={rocket.description}
+                reserved={rocket?.reserved}
               />
             </li>
           ))

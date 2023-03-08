@@ -34,3 +34,12 @@
   color: white;
   cursor: pointer;
 }
+
+.reservedLabel {
+  background-color: rgb(44, 167, 171);
+  color: white;
+  padding: 1px 5px;
+  border-radius: 2px;
+  font-size: 10px;
+  margin-right: 7px;
+}
