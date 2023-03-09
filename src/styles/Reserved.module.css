@@ -1,0 +1,26 @@
+.reservedContainer {
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.reservedContainer * {
+  box-sizing: border-box;
+}
+
+.reservedContainer > h2 {
+  margin: 10px 0;
+}
+
+.reservedContainer > ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.reservedContainer > ul > li {
+  border: 1px solid var(--border);
+  padding: 10px;
+  width: 100%;
+}

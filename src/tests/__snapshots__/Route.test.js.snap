@@ -1,0 +1,37 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<ul>
+  <li>
+    <a
+      aria-current="page"
+      className="active"
+      href="/"
+      onClick={[Function]}
+    >
+      Rockets
+    </a>
+  </li>
+  <li>
+    <a
+      className=""
+      href="/missions"
+      onClick={[Function]}
+    >
+      Missions
+    </a>
+  </li>
+  <li>
+    |
+  </li>
+  <li>
+    <a
+      className=""
+      href="/myprofile"
+      onClick={[Function]}
+    >
+      My profile
+    </a>
+  </li>
+</ul>
+`;
