@@ -12,7 +12,7 @@ it('renders correctly', () => {
     description: 'testingDescription',
     reserved: false,
   };
-  
+
   const tree = renderer
     .create(
       <Provider store={store}>
