@@ -23,7 +23,7 @@ function Mission({
       <td>
         {
           !reserved
-          && <span>NOT A MEMBER</span>
+          && <span className={style.labelNotMember}>NOT A MEMBER</span>
         }
         {
           reserved

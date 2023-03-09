@@ -3,3 +3,11 @@
   margin: 0;
   box-sizing: border-box;
 }
+
+.labelNotMember {
+    background-color: gray !important;
+}
+
+.leavebutton {
+    color: rgb(233, 59, 59) !important;
+}
