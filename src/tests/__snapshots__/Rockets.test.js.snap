@@ -1,0 +1,61 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+Array [
+  <section>
+    <table>
+      <thead>
+        <tr>
+          <th
+            scope="col"
+            style={
+              Object {
+                "width": "10%",
+              }
+            }
+          >
+            Mission
+          </th>
+          <th
+            scope="col"
+            style={
+              Object {
+                "width": "60%",
+              }
+            }
+          >
+            Description 
+          </th>
+          <th
+            scope="col"
+            style={
+              Object {
+                "width": "15%",
+              }
+            }
+          >
+            Status
+          </th>
+          <th
+            scope="col"
+            style={
+              Object {
+                "width": "15%",
+              }
+            }
+          >
+            Join
+          </th>
+        </tr>
+      </thead>
+    </table>
+  </section>,
+  <section
+    className="rocketsContainer"
+  >
+    <ul
+      className="rocketList"
+    />
+  </section>,
+]
+`;
