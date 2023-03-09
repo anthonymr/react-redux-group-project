@@ -17,7 +17,7 @@ function Missions() {
           </tr>
         </thead>
         { missions.map((mission) => (
-          <tbody key={mission.id}>
+          <tbody className={style.tablebody} key={mission.id}>
             <Mission
               name={mission.name}
               description={mission.description}

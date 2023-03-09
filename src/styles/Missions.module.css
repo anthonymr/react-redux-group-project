@@ -32,12 +32,12 @@
 
 .missionstable tbody tr td > button {
   align-self: flex-start;
-  border: none;
-  background-color: #3f6ad8;
+  background-color: white;
   padding: 10px;
   border-radius: 5px;
-  color: white;
+  color: gray;
   cursor: pointer;
+  border: 1px solid gray;
 }
 
 .missionstable tbody tr td > span {
@@ -47,4 +47,8 @@
   border-radius: 2px;
   font-size: 10px;
   margin-right: 7px;
+}
+
+.missionstable tbody:nth-of-type(even) {
+  background-color: rgba(128, 128, 128, 0.226);
 }
