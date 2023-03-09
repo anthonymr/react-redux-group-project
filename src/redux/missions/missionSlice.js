@@ -3,6 +3,7 @@ import axios from 'axios';
 
 const initialState = {
   missions: [],
+  loaded: false,
 };
 
 export const getMissions = createAsyncThunk(
@@ -41,6 +42,7 @@ const missionsSlice = createSlice({
     builder.addCase(getMissions.fulfilled, (state, { payload }) => (
       {
         ...state,
+        loaded: true,
         missions: payload.data.map(
           (mission) => ({
             id: mission.mission_id,

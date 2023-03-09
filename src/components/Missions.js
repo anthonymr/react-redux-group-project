@@ -1,9 +1,18 @@
-import { useSelector } from 'react-redux';
+import { useSelector, useDispatch } from 'react-redux';
+import { useEffect } from 'react';
 import Mission from './Mission';
+import { getMissions } from '../redux/missions/missionSlice';
 import style from '../styles/Missions.module.css';
 
 function Missions() {
-  const { missions } = useSelector((state) => state.missions);
+  const dispatch = useDispatch();
+  const { missions, loaded } = useSelector((state) => state.missions);
+
+  useEffect(() => {
+    if (!loaded) {
+      dispatch(getMissions());
+    }
+  }, [dispatch, loaded]);
 
   return (
     <section>
