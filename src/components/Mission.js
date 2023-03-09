@@ -33,11 +33,11 @@ function Mission({
       <td>
         {
           !reserved
-          && <button type="button" onClick={reserveClickHandler}>Join Mission</button>
+          && <button type="button" onClick={reserveClickHandler} className={style.joinbutton}>Join Mission</button>
         }
         {
           reserved
-          && <button type="button" onClick={leaveClickHandler}>Leave Mission</button>
+          && <button type="button" onClick={leaveClickHandler} className={style.leavebutton}>Leave Mission</button>
         }
       </td>
     </tr>
