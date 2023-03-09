@@ -1,6 +1,7 @@
 import PropTypes from 'prop-types';
 import { useDispatch } from 'react-redux';
 import { reserveMission, leaveMission } from '../redux/missions/missionSlice';
+import style from '../styles/Mission.module.css';
 
 function Mission({
   name, description, id, reserved,
@@ -16,8 +17,8 @@ function Mission({
   }
 
   return (
-    <tr className="missions-table-row">
-      <td>{name}</td>
+    <tr className={style.missionstablerow}>
+      <td className={style.missionstablename}>{name}</td>
       <td>{description}</td>
       <td>
         {
