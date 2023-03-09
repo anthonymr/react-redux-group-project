@@ -63,5 +63,13 @@ Array [
       className="rocketList"
     />
   </section>,
+  <section
+    className="reservedContainer"
+  >
+    <h2>
+      My Missions
+    </h2>
+    <ul />
+  </section>,
 ]
 `;

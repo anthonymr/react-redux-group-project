@@ -3,9 +3,15 @@
 exports[`renders correctly 1`] = `
 Array [
   <section>
-    <table>
-      <thead>
-        <tr>
+    <table
+      className="missionstable"
+    >
+      <thead
+        className="missionstablehead"
+      >
+        <tr
+          className="missionstablerow"
+        >
           <th
             scope="col"
             style={

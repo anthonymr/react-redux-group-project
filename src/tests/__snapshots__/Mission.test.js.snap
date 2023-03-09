@@ -63,5 +63,33 @@ Array [
       className="rocketList"
     />
   </section>,
+  <tr
+    className="missionstablerow"
+  >
+    <td
+      className="missionstablename"
+    >
+      testingMission
+    </td>
+    <td>
+      testingDescription
+    </td>
+    <td>
+      <span
+        className="labelNotMember"
+      >
+        NOT A MEMBER
+      </span>
+    </td>
+    <td>
+      <button
+        className="joinbutton"
+        onClick={[Function]}
+        type="button"
+      >
+        Join Mission
+      </button>
+    </td>
+  </tr>,
 ]
 `;
