@@ -1,6 +1,7 @@
 import PropTypes from 'prop-types';
 import { useDispatch } from 'react-redux';
 import { reserveMission, leaveMission } from '../redux/missions/missionSlice';
+import style from '../styles/Mission.module.css';
 
 function Mission({
   name, description, id, reserved,
@@ -16,13 +17,13 @@ function Mission({
   }
 
   return (
-    <tr className="missions-table-row">
-      <td>{name}</td>
+    <tr className={style.missionstablerow}>
+      <td className={style.missionstablename}>{name}</td>
       <td>{description}</td>
       <td>
         {
           !reserved
-          && <span>NOT A MEMBER</span>
+          && <span className={style.labelNotMember}>NOT A MEMBER</span>
         }
         {
           reserved
@@ -32,11 +33,11 @@ function Mission({
       <td>
         {
           !reserved
-          && <button type="button" onClick={reserveClickHandler}>Join Mission</button>
+          && <button type="button" onClick={reserveClickHandler} className={style.joinbutton}>Join Mission</button>
         }
         {
           reserved
-          && <button type="button" onClick={leaveClickHandler}>Leave Mission</button>
+          && <button type="button" onClick={leaveClickHandler} className={style.leavebutton}>Leave Mission</button>
         }
       </td>
     </tr>
